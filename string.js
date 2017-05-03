@@ -60,7 +60,7 @@ exports.containsUpper =function(str){
   }
   catch(e){
     return hasUpper;
-    console.log(e.message);
+    console.log(e.name+": "+e.message);
   }
 }
 
@@ -81,7 +81,7 @@ exports.containsLower =function(str){
   }
   catch(e){
     return hasLower;
-    console.log(e.message);
+    console.log(e.name+": "+e.message);
   }
 }
 
@@ -101,7 +101,7 @@ exports.containsNumerical =function(str){
   }
   catch(e){
     return hasNumber;
-    console.log(e.message);
+    console.log(e.name+": "+e.message);
   }
 }
 
@@ -122,6 +122,6 @@ exports.containsSpecial =function(str){
   }
   catch(e){
     return hasSpecial;
-    console.log(e.message);
+    console.log(e.name+": "+e.message);
   }
 }
