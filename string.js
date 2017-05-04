@@ -48,7 +48,7 @@ exports.checkLength = function(str){
 exports.containsUpper =function(str){
   let hasUpper = false;
     try{
-      for(let x = 0; x < str.length, x++){
+      for(let x = 0; x < str.length; x++) {
         if(inRange(str[x], 65, 90)==true){
           hasUpper = true;
           throw new PasswordMessage("Has uppercase character");
@@ -69,7 +69,7 @@ exports.containsUpper =function(str){
 exports.containsLower =function(str){
   let hasLower = false;
     try{
-      for(let x = 0; x < str.length, x++){
+      for(let x = 0; x < str.length; x++){
         if(inRange(str[x], 97, 112)==true){
           hasLower = true;
           throw new PasswordMessage("Has lowercase character");
@@ -89,7 +89,7 @@ exports.containsLower =function(str){
 exports.containsNumerical =function(str){
   let hasNumber = false;
     try{
-      for(let x = 0; x < str.length, x++){
+      for(let x = 0; x < str.length; x++){
         if(inRange(str[x], 48, 57)==true){
           hasNumber = true;
           throw new PasswordMessage("Has number");
@@ -110,7 +110,7 @@ exports.containsSpecial =function(str){
   let hasSpecial = false;
   let special = [33,64,35,36,37,94,38,42];
   try{
-    for(let x = 0; x < str.length, x++){
+    for(let x = 0; x < str.length; x++){
       if(inSpecial(str[x], special) == true){
         hasSpecial = true;
         throw new PasswordMessage("Has special character");
